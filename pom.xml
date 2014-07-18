@@ -12,11 +12,18 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<version.tomcat-servlet-api>7.0.47</version.tomcat-servlet-api>
 		<version.logback>1.1.2</version.logback>
 		<version.slf4j>1.7.5</version.slf4j>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-servlet-api</artifactId>
+			<version>${version.tomcat-servlet-api}</version>
+			<!--scope>provided</scope-->
+		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
